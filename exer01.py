@@ -26,6 +26,13 @@ if(img1.shape != img2.shape ) :
 #---------------------------------
 #ここを編集して，sum_square_diffを計算
 sum_square_diff = 0
+for i in range(img1.shape[0]):
+    for j in range(img1.shape[1]):
+        diff = img1[i, j] - img2[i, j]
+        sum_square_diff += diff * diff
+
+# python exer01.py tm/img1.png tm/img2.png
+# python exer01.py tm/img1.png tm/img3.png
 
 #---------------------------------
 
